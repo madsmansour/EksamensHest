@@ -1,0 +1,21 @@
+extends layout
+
+block content
+    h1= "DB"
+    div.container
+        table.table.table-striped
+            thead
+                th= "Id"
+                th= "Navn"
+                th= "Alder"
+                th= "Race"
+                th= "Alive"
+            tbody
+                each hest in hests
+                    tr
+                        td= hest.id
+                        td= hest.navn
+                        td= hest.race
+                        td= hest.alder
+                        td= hest.alive
+                            

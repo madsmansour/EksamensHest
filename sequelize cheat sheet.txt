@@ -1,0 +1,14 @@
+express
+npm install
+npm install faker
+npm install mysql2
+npm install sequelize 
+npm install sequelize-cli
+node_modules/.bin/sequelize init
+opret database i phpMyAdmin
+node_modules/.bin/sequelize model:create --name User --attributes username:string, password:string
+Ændre databasenavn til det du skal bruge i confg
+styr på migrations
+styr på models
+node_modules/.bin/sequelize db:migrate
+lav routes (app.js, routes, jade)
